@@ -90,9 +90,6 @@ func TestGenManNoHiddenParents(t *testing.T) {
 }
 
 func TestGenManNoGenTag(t *testing.T) {
-	echoCmd.DisableAutoGenTag = true
-	defer func() { echoCmd.DisableAutoGenTag = false }()
-
 	header := &GenManHeader{
 		Title:   "Project",
 		Section: "2",

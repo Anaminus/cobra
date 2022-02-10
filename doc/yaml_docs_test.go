@@ -27,9 +27,6 @@ func TestGenYamlDoc(t *testing.T) {
 }
 
 func TestGenYamlNoTag(t *testing.T) {
-	rootCmd.DisableAutoGenTag = true
-	defer func() { rootCmd.DisableAutoGenTag = false }()
-
 	buf := new(bytes.Buffer)
 	if err := GenYaml(rootCmd, buf); err != nil {
 		t.Fatal(err)

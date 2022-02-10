@@ -51,9 +51,6 @@ func TestGenRSTNoHiddenParents(t *testing.T) {
 }
 
 func TestGenRSTNoTag(t *testing.T) {
-	rootCmd.DisableAutoGenTag = true
-	defer func() { rootCmd.DisableAutoGenTag = false }()
-
 	buf := new(bytes.Buffer)
 	if err := GenReST(rootCmd, buf); err != nil {
 		t.Fatal(err)
