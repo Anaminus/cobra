@@ -25,7 +25,7 @@ import (
 	"sort"
 	"strings"
 
-	flag "github.com/spf13/pflag"
+	flag "github.com/anaminus/pflag"
 )
 
 // FParseErrWhitelist configures Flag parse errors to be ignored

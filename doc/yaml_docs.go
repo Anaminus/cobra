@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	"github.com/anaminus/cobra"
-	"github.com/spf13/pflag"
+	"github.com/anaminus/pflag"
 	"gopkg.in/yaml.v2"
 )
 
