@@ -611,7 +611,7 @@ func (c *Command) initDefaultCompletionCmd() {
 
 	completionCmd := &Command{
 		Use:   compCmdName,
-		Short: "Generate the autocompletion script for the specified shell",
+		Short: "Generate an autocompletion script.",
 		Long: fmt.Sprintf(`Generate the autocompletion script for %[1]s for the specified shell.
 See each sub-command's help for details on how to use the generated script.
 `, c.Root().Name()),
